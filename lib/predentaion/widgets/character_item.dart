@@ -42,6 +42,9 @@ class CharacterItem extends StatelessWidget {
                   },
                 )),
                 errorWidget: (context, url, error) => const Icon(Icons.error),
+                width: double.infinity,
+                height: double.infinity,
+                fit: BoxFit.cover,
               ),
 
               /// 1- use image assets while loading
