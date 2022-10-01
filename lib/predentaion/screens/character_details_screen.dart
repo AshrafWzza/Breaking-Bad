@@ -73,11 +73,13 @@ class CharacterDetailsScreen extends StatelessWidget {
           character.name,
           style: const TextStyle(color: MyColors.myWhite),
         ),
-        background: Hero(
-          tag: character.charId,
-          child: Image.network(
-            character.image,
-            fit: BoxFit.cover,
+        background: InteractiveViewer(
+          child: Hero(
+            tag: character.charId,
+            child: Image.network(
+              character.image,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_breaking/constants/strings.dart';
-import 'package:flutter_breaking/predentaion/screens/character_details_screen.dart';
-
-import '../../constants/my_colors.dart';
-import '../../data/models/characters.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import '../../constants/my_colors.dart';
+import '../../data/models/characters.dart';
 
 class CharacterItem extends StatelessWidget {
   const CharacterItem({Key? key, required this.character}) : super(key: key);

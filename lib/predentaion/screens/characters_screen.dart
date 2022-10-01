@@ -183,18 +183,23 @@ class _CharactersScreenState extends State<CharactersScreen> {
   }
 
   Widget buildNoInternetWidget() {
-    return Center(
-      child: Container(
-        color: MyColors.myWhite,
+    return Column(children: [
+      const SizedBox(
+        height: 30,
+      ),
+      const Text(
+        'Can\'t connect ... check your internet connection',
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        textAlign: TextAlign.center,
+      ),
+      Expanded(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            SizedBox(height: 20),
-            Text('Can\'t connect ... check your internet connection'),
             Image(image: AssetImage('assets/images/connection.png'))
           ],
         ),
       ),
-    );
+    ]);
   }
 }
